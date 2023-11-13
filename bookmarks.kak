@@ -39,5 +39,5 @@ add-highlighter shared/bookmarks/lines regex "^((?:\w:)?[^:\n]+):(\d+):(\d+)?" 1
 add-highlighter shared/bookmarks/current line %{%opt{bookmarks_current_line}} default+b
 
 declare-user-mode bookmarks
-map global bookmarks a ':bookmarks-add-prompt<ret>' -docstring 'add a bookmark'
-map global bookmarks f ':bookmarks-open<ret>'       -docstring 'open bookmarks'
+map global bookmarks <ret> ':bookmarks-add-prompt<ret>' -docstring 'add a bookmark'
+map global bookmarks l     ':bookmarks-open<ret>'       -docstring 'open bookmarks'
